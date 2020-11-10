@@ -43,7 +43,7 @@ def pick_an_image(path, n = 1, frame = 120, save_path = 'image'):
 
 	for folder in os.listdir(path):
 		print(folder)
-		segfile_list.append(os.path.join(path, folder, folder + "_seg.nii.gz"))
+		seg_file_list.append(os.path.join(path, folder, folder + "_seg.nii.gz"))
 		c_1file_list.append(os.path.join(path, folder, folder + "_t1.nii.gz"))
 		c_2file_list.append(os.path.join(path, folder, folder + "_t1ce.nii.gz"))
 		c_3file_list.append(os.path.join(path, folder, folder + "_t2.nii.gz"))
