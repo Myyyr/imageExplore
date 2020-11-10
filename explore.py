@@ -9,13 +9,13 @@ def image_size(img):
 	return s
 
 def getWTMask(labels):
-    return (labels != 0).float()
+    return (labels != 0)*1
 
 def getTCMask(labels):
-    return ((labels != 0) * (labels != 2)).float() 
+    return ((labels != 0) * (labels != 2))*1 
 
 def getETMask(labels):
-    return (labels == 4).float()
+    return (labels == 4)*1
 
 def seg_size(mask):
 	return np.sum(mask)
