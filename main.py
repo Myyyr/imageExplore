@@ -61,9 +61,9 @@ def pick_an_image(path, n = 1, frame = 120, save_path = 'image'):
 		img2 = utils.nibfile(im_dict[key][n])[:, frame, :]
 		img3 = utils.nibfile(im_dict[key][n])[:, :, frame]
 
-		utils.save_image(img1, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_1_.pny')
-		utils.save_image(img2, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_2_.pny')
-		utils.save_image(img3, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_3_.pny')
+		utils.save_image(img1, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_1_.npy')
+		utils.save_image(img2, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_2_.npy')
+		utils.save_image(img3, save_path+str(n)+'_'+key[:2]+'_'+str(frame)+'_3_.npy')
 
 
 
