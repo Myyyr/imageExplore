@@ -33,7 +33,7 @@ def main(path):
 
 
 
-if __name__=="__main___":
+if __name__ == '__main__':
 
 	parser = argparse.ArgumentParser("dataset path")
 	parser.add_argument('-p', '--path', help='dataset path', required=True)
