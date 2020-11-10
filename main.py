@@ -24,6 +24,7 @@ def main(path):
 	for file in file_list:
 		print("Doing :", i, "/", len(file_list))
 		sumary_dict = explore.process_all(file, sumary_dict)
+		i+=1
 
 	utils.save_dict(sumary_dict)
 
