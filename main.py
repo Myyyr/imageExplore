@@ -7,10 +7,10 @@ import explore
 
 def main(path):
 	sumary_dict = {
-					"wt_seg_size" = [], 
-					"tc_seg_size" = [], 
-					"et_seg_size" = [],
-					"image_size" = []
+					"wt_seg_size" : [], 
+					"tc_seg_size" : [], 
+					"et_seg_size" : [],
+					"image_size" : []
 				}
 
 	file_list = []
