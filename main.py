@@ -27,6 +27,8 @@ def main(path):
 
 	utils.save_dict(sumary_dict)
 
+	print("END")
+	return 0
 
 
 
