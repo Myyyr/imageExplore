@@ -33,6 +33,8 @@ def process_all(file, sumary_dict):
 
 	return sumary_dict
 
+
+
 # sumary_dict = {
 # 				"wt_seg_size" = [], 
 # 				"tc_seg_size" = [], 

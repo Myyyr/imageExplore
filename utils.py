@@ -13,3 +13,13 @@ def save_dict(sumary_dict, path = "sumary.csv"):
 	df = pd.DataFrame(sumary_dict)
 	df.to_csv(path)
 
+
+
+def save_image(img, path):
+	with open(path, 'wb') as f:
+		np.save(f, img)
+
+
+def load_image(path):
+	with open(path, 'rb') as f:
+		return np.load(f)
