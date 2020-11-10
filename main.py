@@ -17,7 +17,7 @@ def main(path):
 
 	for folder in os.listdir(path):
 		print(folder)
-		file = os.path.join(input_folder, folder, folder + "_seg.nii.gz")
+		file = os.path.join(path, folder, folder + "_seg.nii.gz")
 		file_list.append(file)
 
 	i = 1
