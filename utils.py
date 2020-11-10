@@ -1,0 +1,15 @@
+import os
+import numpy as np
+import nibabel as nib
+import pandas as pd
+
+
+def nibfile(file):
+    img = nib.load(file)
+    return img.get_fdata()
+
+
+def save_dict(sumary_dict, path = "sumary.csv"):
+	df = pd.DataFrame(sumary_dict)
+	df.to_csv(path)
+
