@@ -44,10 +44,10 @@ def pick_an_image(path, n = 1, frame = 120, save_path = 'image'):
 	for folder in os.listdir(path):
 		print(folder)
 		seg_file_list.append(os.path.join(path, folder, folder + "_seg.nii.gz"))
-		c_1file_list.append(os.path.join(path, folder, folder + "_t1.nii.gz"))
-		c_2file_list.append(os.path.join(path, folder, folder + "_t1ce.nii.gz"))
-		c_3file_list.append(os.path.join(path, folder, folder + "_t2.nii.gz"))
-		c_4file_list.append(os.path.join(path, folder, folder + "_flair.nii.gz"))
+		c_1_file_list.append(os.path.join(path, folder, folder + "_t1.nii.gz"))
+		c_2_file_list.append(os.path.join(path, folder, folder + "_t1ce.nii.gz"))
+		c_3_file_list.append(os.path.join(path, folder, folder + "_t2.nii.gz"))
+		c_4_file_list.append(os.path.join(path, folder, folder + "_flair.nii.gz"))
 
 	im_dict = {'seg_file_list':seg_file_list,
 				'c1_file_list':c1_file_list,
